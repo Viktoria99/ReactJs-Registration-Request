@@ -1,0 +1,332 @@
+.documentDetails {
+    &__rootContainer {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: rgba(11, 31, 53, .95);
+    }
+
+    &__documentInfoContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        height: 700px;
+    }
+
+    &__clientHeading {
+        font-size: 36px;
+        margin: 32px 0 0;
+    }
+
+    &__caption {
+        margin: 24px 0 8px;
+        font-size: 22px;
+    }
+
+    &__controlButtonsContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__key {
+        display: flex;
+        align-items: center;
+        color: rgba(11, 31, 53, .6);
+        margin-right: 8px;
+        font-size: 16px;
+        min-width: 270px;
+        margin-bottom: 32px;
+    }
+
+    &__iconRecentStatus {
+        margin: 0 5px 3px 0;
+    }
+
+    &__columnContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__whiteSpace {
+        min-width: 50px;
+    }
+
+    &__fullInfoContainer {
+        width: 100%;
+        flex-direction: column;
+        max-height: 880px;
+        display: flex;
+        overflow-y: auto;
+        padding: 8px;
+    }
+
+    &__baseInfoContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 32px;
+    }
+
+    &__baseInfoLink {
+        line-height: 1;
+        font-size: 16px;
+    }
+
+    &__keyStatus {
+        color: rgba(11, 31, 53, .6);
+        margin: 0 8px 0 0;
+    }
+
+    &__detailsContainer {
+        overflow: hidden;
+    }
+
+    &__columnContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__clientInfoContainer {
+        display: grid;
+        width: 100%;
+        max-width: 450px;
+        font-size: 16px;
+        min-width: 340px;
+        padding: 8px 8px 0;
+        height: 90px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 0;
+        border-radius: 4px;
+        border: rgb(222, 222, 222) 1px solid;
+        box-shadow: inset 0 1px 3px 0 rgba(11, 31, 53, 0.15);
+    }
+
+    &__clientInfoContainer div:nth-of-type(2n+1) {
+        font-weight: 700;
+    }
+
+    &__clientInfoContainer div:nth-of-type(2n) {
+        display: flex;
+        padding-left: 8px;
+    }
+
+    &__parentDealContainer {
+        display: grid;
+        width: 100%;
+        max-width: 450px;
+        padding: 8px 8px 0;
+        font-size: 16px;
+        min-width: 340px;
+        height: 90px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 0;
+        border: rgb(222, 222, 222) 1px solid;
+        box-shadow: inset 0 1px 3px 0 rgba(11, 31, 53, 0.15);
+        border-radius: 4px;
+    }
+
+    &__parentDealContainer div:nth-of-type(2n+1) {
+        font-weight: 700;
+    }
+
+    &__parentDealContainer div:nth-of-type(2n) {
+        padding-left: 8px;
+    }
+
+    &__documentStatus {
+        font-weight: 400;
+        font-size: 16px;
+
+        &_created {
+            color: rgba(11, 31, 53, .6);
+        }
+
+        &__inProgress {
+            color: rgba(14, 52, 100, 100);
+        }
+
+        &__done {
+            color: rgba(13, 186, 38, 100);
+        }
+
+        &__dead {
+            color: rgba(239, 49, 36, 90);
+        }
+    }
+
+    &__documentStatusInProgress {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(14, 52, 100, 100);
+    }
+
+    &__documentStatusDone {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(13, 186, 38, 100);
+    }
+
+    &__documentStatusDead {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(239, 49, 36, 90);
+    }
+
+    &__status {
+        color: rgba(11, 31, 53, .95);
+    }
+
+    &__documentErrorContainer {
+        margin: 10px 0 0;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__error {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        align-items: center;
+    }
+
+    &__rowErrorContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__iconError {
+        padding-right: 10px;
+    }
+
+    &__errorToken {
+        font-size: 20px;
+    }
+
+    &__statusContainer {
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    &__rotate:hover {
+        transition: transform 900ms;
+        transform: rotateZ(-360deg);
+    }
+
+    &__lastStep {
+        margin-right: 10px;
+    }
+}
+
+.resultDetailsContainer {
+    width: 100%;
+    flex-direction: column;
+    max-height: 880px;
+    display: flex;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.whiteSpace {
+    min-height: 50px;
+    height: 50px;
+}
+
+.rowCardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 200px;
+    padding-left: 10px;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.baseDealInfo {
+    padding-top: 24px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: 1px solid  rgb(222, 222, 222);
+}
+
+.rowDealStatus {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+}
+
+.detailsContainer {
+    overflow: hidden;
+}
+
+.key {
+    font-weight: 700;
+    font-size: 17px;
+    min-width: 270px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.notPassedKey {
+    color: rgba(11, 31, 53, .6);
+    font-size: 20px;
+    min-width: 270px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0;
+    min-width: 250px;
+    display: flex;
+}
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+}
+
+.smallWhiteSpace {
+    width: 10px;
+    height: 10px;
+}
+
+.iconDiv {
+    margin-right: 7px;
+}
+
+.iconRestart {
+    margin-right: 10px;
+    animation: rotation infinite;
+    animation-duration: 5s;
+}
+

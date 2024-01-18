@@ -1,0 +1,17 @@
+.key-value-block {
+    padding-bottom: 24px;
+    padding-right: 23px;
+    width: 250px;
+
+    &__text-font {
+        color: rgba(11, 31, 53, .6);
+        font-size: 20px;
+    }
+
+    &__children-block {
+        margin-top: 6px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

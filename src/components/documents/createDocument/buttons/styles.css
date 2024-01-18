@@ -1,0 +1,18 @@
+.buttonsBlock {
+    &__rootContainer {
+        display: flex;
+        margin-top: 24px;
+        justify-content: flex-end;
+        width: 80%;
+        animation: flipdown 0.5s ease both;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__documentRequestButton {
+        width: 283px;
+    }
+}

@@ -1,0 +1,57 @@
+@import 'react/main.css';
+
+.documents {
+    &__productRequest {
+        width: 600px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__rootContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: rgba(11, 31, 53, .95);
+        align-items: flex-start;
+    }
+
+    &__input {
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    &__button {
+        margin-left: 50px;
+    }
+
+    &__rowErrorContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__error {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        align-items: center;
+    }
+
+    &__errorToken {
+        margin-top: 9px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__iconError {
+        margin-right: 10px;
+    }
+
+    &__businessError {
+        margin-top: 32px;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}

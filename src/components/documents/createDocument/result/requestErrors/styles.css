@@ -1,0 +1,23 @@
+.request-errors {
+    &__error-container {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px 0 0;
+        font-weight: 500;
+    }
+
+    &__icon-error {
+        margin: 0 10px 3px 0;
+    }
+
+    &__downloadingError {
+        width: 110%;
+        font-weight: 600;
+        font-size: 14px;
+        display: flex;
+        padding-top: 8px;
+        user-select: text;
+    }
+}

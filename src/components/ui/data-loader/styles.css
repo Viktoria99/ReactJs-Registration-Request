@@ -1,0 +1,13 @@
+@import 'react/vars.css';
+
+.data-loader {
+    &__spin {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        &_needPadding {
+            margin-top: 60px;
+        }
+    }
+}

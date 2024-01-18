@@ -1,0 +1,10 @@
+*.swp
+*.swo
+.idea/
+.git
+test-results.xml
+TESTS-PhantomJS_*.xml
+
+.awcache
+coverage/
+docker/

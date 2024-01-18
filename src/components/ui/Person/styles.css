@@ -1,0 +1,14 @@
+.fio-value-block {
+    width: 250px;
+
+    &__text-font {
+        color: rgba(11, 31, 53, .6);
+        font-size: 20px;
+    }
+
+    &__children-block {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
